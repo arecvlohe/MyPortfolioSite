@@ -23,16 +23,16 @@ body h1 {
   font-size: 6em;
 }
 body h2 {
-  font-size: 5em;
-}
-body h3 {
   font-size: 4em;
 }
-body h4 {
+body h3 {
   font-size: 3em;
 }
-body h5 {
+body h4 {
   font-size: 2em;
+}
+body h5 {
+  font-size: 1em;
 }
 body h6,
 body p {
@@ -55,7 +55,7 @@ section #about {
   height: 100vh;
   padding: 0 10%;
 }
-section #about h4 {
+section #about h2 {
   font-family: 'Abril Fatface';
   font-weight: 300;
   margin: 0;
@@ -90,7 +90,7 @@ section #contact {
           align-items: center;
   height: 100vh;
 }
-section #contact h4 {
+section #contact h2 {
   text-align: center;
   margin: 0;
   font-family: 'Abril Fatface';
@@ -202,7 +202,7 @@ section #header {
           align-items: center;
   text-align: center;
 }
-section #header h2 {
+section #header h1 {
   font-family: 'Abril Fatface';
   font-weight: 300;
   margin: 0;
@@ -265,10 +265,9 @@ section #knowledge {
           flex-direction: column;
   text-align: center;
 }
-section #knowledge h4 {
+section #knowledge h2 {
   margin: 0;
   margin-bottom: 0.5em;
-  color: #212121;
   font-family: 'Abril Fatface';
 }
 section #knowledge .icon-set {
@@ -373,7 +372,7 @@ section #work {
   height: 100vh;
   padding: 0 10%;
 }
-section #work h4 {
+section #work h2 {
   margin: 0;
   margin-bottom: 0.5em;
   text-align: center;
