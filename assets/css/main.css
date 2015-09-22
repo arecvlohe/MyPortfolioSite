@@ -59,12 +59,10 @@ section #about h4 {
   font-family: 'Abril Fatface';
   font-weight: 300;
   margin: 0;
-  color: #000;
 }
 section #about p {
   font-family: 'Source Code Pro';
   font-weight: 500;
-  color: #212121;
 }
 section #about p span {
   color: rgba(255,0,0,0.5);
@@ -92,7 +90,7 @@ section #contact {
           align-items: center;
   height: 100vh;
 }
-section #contact h5 {
+section #contact h4 {
   text-align: center;
   margin: 0;
   font-family: 'Abril Fatface';
@@ -231,12 +229,20 @@ section #header .icons-container i:hover {
 }
 section #header span {
   position: absolute;
-  bottom: 20px;
-  left: 42.5%;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
-  font: 900 0.4em 'Source Code Pro';
+  font: 900 0.6em 'Source Code Pro';
   letter-spacing: 5px;
   color: #212121;
+}
+@media (max-width: 700px) {
+  section #header span {
+    font: 900 0.75em 'Source Code Pro';
+  }
 }
 section #knowledge {
   height: 100vh;
@@ -261,6 +267,7 @@ section #knowledge {
 }
 section #knowledge h4 {
   margin: 0;
+  margin-bottom: 0.5em;
   color: #212121;
   font-family: 'Abril Fatface';
 }
@@ -269,10 +276,10 @@ section #knowledge .icon-set {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -284,7 +291,7 @@ section #knowledge .icon-set {
   margin: 0 auto;
 }
 section #knowledge .icon-set i {
-  padding: 0.3em;
+  padding: 0.45em;
   font-size: 3em;
   color: #808080;
   -webkit-transition: color 0.5s ease-in-out 0s;
@@ -368,6 +375,7 @@ section #work {
 }
 section #work h4 {
   margin: 0;
+  margin-bottom: 0.5em;
   text-align: center;
   font-family: 'Abril Fatface';
   color: #212121;
@@ -389,7 +397,7 @@ section #work .projects-container a {
 section #work .projects-container .project {
   display: block;
   width: 33.333%;
-  height: 150px;
+  height: 250px;
   float: left;
   position: relative;
   overflow: hidden;

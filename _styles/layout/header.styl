@@ -32,8 +32,13 @@ section
           color rgba(255,0,0,.5)
 
     span
-      absolute bottom 20px left 42.5%
+      absolute bottom 3em left right
+      margin-left auto
+      margin-right auto
       text-transform uppercase
-      font 900 .4em 'Source Code Pro'
+      font 900 .6em 'Source Code Pro'
       letter-spacing 5px
       color lighten(black, 13%)
+
+      @media(max-width: 700px)
+        font 900 .75em 'Source Code Pro'
