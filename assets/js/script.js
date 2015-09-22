@@ -18,7 +18,7 @@ $(document).ready(function(){
     afterMove         : function(index) {},
     loop              : true,
     keyboard          : true,
-    responsiveFallback: false,
+    responsiveFallback: 600,
     direction         : "vertical"
   });
 
