@@ -1,18 +1,18 @@
 section(title='How to Contact Me Section' description='You can use the form to reach out to me')
   #contact
     
-    h4 Ask me anything
+    h2 Ask me anything
     
     form(action='http://formspree.io/adamrecvlohe@gmail.com' method='POST')
       .input-group
-        label What Does Your Mom Call You?
+        label(for='name') What Does Your Mom Call You?
         input(type='text' name='name' placeholder='John Jacob Jingleheimer Schmidt')
       .input-group  
-        label What Is Your Online Pen Pal Name?
+        label(for='email') What Is Your Online Pen Pal Name?
         input(type='email' name='_replyto' placeholder='beetlejuice@saythreetimes.com')
         
       .input-group
-        label Tell Me About Your Project!
+        label(for='message') Tell Me About Your Project!
         textarea(name='message' placeholder='We do fun things like make awesome sauce.')
         
       .input-group
