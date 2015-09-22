@@ -36,11 +36,11 @@ var message = {
 
 gulp.task('inject', function() {
   var target = gulp.src('./_layouts/template.html');
-  var jquery = gulp.src(['assets/**/jquery.js'], {read: false});
+  var jquery = gulp.src(['assets/**/jquery.js'], {read: false}, {addPrefix: 'MyPortfolioSite'});
   var vendors = gulp.src(['!assets/**/jquery.js', '!assets/**/script.js','!assets/**/Flowtype.js','!assets/lib/bounce.js','assets/**/*.js'], {read: false});
   var myStuff = gulp.src(['assets/js/script.js','!assets/lib/animate.css' ,'assets/**/*.css'], {read: false});
 
-  return target.pipe(inject(series(jquery, vendors, myStuff)))
+  return target.pipe(inject(series(jquery, vendors, myStuff)), {addPrefix: 'MyPortfolioSite'})
     .pipe(gulp.dest('./_layouts'));
 });
 
