@@ -6,14 +6,14 @@ section(title='How to Contact Me Section' description='You can use the form to r
     form(action='http://formspree.io/adamrecvlohe@gmail.com' method='POST')
       .input-group
         label(for='name') What Does Your Mom Call You?
-        input(type='text' name='name' placeholder='John Jacob Jingleheimer Schmidt')
+        input(id='name' type='text' name='name' placeholder='John Jacob Jingleheimer Schmidt')
       .input-group  
         label(for='email') What Is Your Online Pen Pal Name?
-        input(type='email' name='_replyto' placeholder='beetlejuice@saythreetimes.com')
+        input(id='email' type='email' name='_replyto' placeholder='beetlejuice@saythreetimes.com')
         
       .input-group
         label(for='message') Tell Me About Your Project!
-        textarea(name='message' placeholder='We do fun things like make awesome sauce.')
+        textarea(id='message' name='message' placeholder='We do fun things like make awesome sauce.')
         
       .input-group
         input(type='submit' value='Send')
