@@ -6,11 +6,10 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/MyPortfolioSite/" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://arecvlohe.github.io" # the base hostname & protocol for your site
 twitter_username: adamrecvlohe
 github_username:  arecvlohe
 
 # Build settings
 markdown: kramdown
-
 exclude: [gulpfile.js, package.json, node_modules, bower.json, bower_components]
