@@ -19,14 +19,7 @@ $(document).ready(function(){
     loop              : true,
     keyboard          : true,
     responsiveFallback: false,
-
-    responsiveHeightFallback: false,
-    disableMouseMove        : false,
-    moveUpKeys              : [33, 38],
-    moveDownKeys            : [34, 40],
-    backtoTopKeys           : [36],
-    gotoBottom              : [35]
-
+    direction         : "vertical"
   });
 
 });
