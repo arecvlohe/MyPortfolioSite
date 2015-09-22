@@ -22,7 +22,7 @@ $(document).ready(function(){
     direction         : "vertical",
 
     responsiveHeightFallback: false,
-    disableMouseMove        : true,
+    disableMouseMove        : false,
     moveUpKeys              : [33, 38],
     moveDownKeys            : [34, 40],
     backtoTopKeys           : [36],
