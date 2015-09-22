@@ -239,9 +239,9 @@ section #header span {
   letter-spacing: 5px;
   color: #212121;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   section #header span {
-    font: 900 0.75em 'Source Code Pro';
+    display: none;
   }
 }
 section #knowledge {
