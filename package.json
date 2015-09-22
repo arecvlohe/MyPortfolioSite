@@ -1,0 +1,26 @@
+{
+  "name": "adam-recvlohe-my-portfolio",
+  "version": "0.0.0",
+  "description": "Portfolio Site",
+  "main": "gulpfile.js",
+  "author": "Adam Recvlohe",
+  "devDependecies": {},
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.7.1",
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autowatch": "^1.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-inject": "^2.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-main-bower-files": "^1.2.1",
+    "gulp-stylus": "^2.0.7",
+    "gulp-uncss": "^1.0.3",
+    "nib": "^1.1.0",
+    "stream-series": "^0.1.1"
+  },
+  "dependencies": {
+    "wiredep": "^2.2.2"
+  }
+}

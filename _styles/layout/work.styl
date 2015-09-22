@@ -1,0 +1,77 @@
+section
+  #work
+    display flex
+    flex-direction column
+    justify-content center
+    height 100vh
+    padding 0 10%
+    h4
+      margin 0
+      text-align center
+      font-family 'Abril Fatface'
+      color lighten(black, 13%)
+
+    .projects-container
+      clearfix();
+      a
+        text-decoration none
+
+      .project
+        display block
+        width 33.333%
+        height 150px
+        float left
+        position relative
+        overflow hidden
+        text-align center
+
+        @media(max-width: 700px)
+          width 50%
+          height 100px
+
+        .icon
+          text-align center
+          text-transform uppercase
+          color lighten(black, 13%)
+          absolute top 50% left 50%
+          margin-right -50%
+          transform translate(-50%, -50%)
+          overflow hidden
+
+        .overlay
+          absolute top bottom 100% left right
+          background transparentify(#ff7f7f, .95)
+          display flex
+          flex-direction column
+          justify-content center
+          align-items center
+          transition all .25s ease-in-out 0s
+
+          p
+            color white
+            margin 0
+            font 300 1em 'Source Code Pro'
+
+            &:not(*:root)
+              absolute top 50% left 50%
+              margin-right -50%
+              transform translate(-50%, -50%)
+
+
+          strong
+            color white
+            text-transform uppercase
+            font 300 1em normal
+          i
+            color white
+
+          small
+            font 300 .75em normal
+            color white
+            text-align center
+            width 125px
+            font 200 .5em 'Source Code Pro'
+
+
+        &:hover .overlay
+          absolute top bottom left right

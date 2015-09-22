@@ -1,0 +1,13 @@
+mixin skills(title, ...skills)
+  .skills-list
+    p= title
+      ul
+        each skill in skills
+          li
+            i.fa.fa-checkmark= skill
+            
+section
+  #skills
+    h5 Scan my skills
+    +skills('Web Development','Responsive Design', 'Prototyping', 'Adobe Creative Suite')
+    +skills('Technical','something')

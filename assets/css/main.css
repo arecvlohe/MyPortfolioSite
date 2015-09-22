@@ -1,0 +1,479 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 18px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  line-height: 1.45;
+  color: #212121;
+}
+body h1 {
+  font-size: 6em;
+}
+body h2 {
+  font-size: 5em;
+}
+body h3 {
+  font-size: 4em;
+}
+body h4 {
+  font-size: 3em;
+}
+body h5 {
+  font-size: 2em;
+}
+body h6,
+body p {
+  font-size: 1em;
+}
+section #about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+section #about h4 {
+  font-family: 'Abril Fatface';
+  font-weight: 300;
+  margin: 0;
+  color: #000;
+}
+section #about p {
+  font-family: 'Source Code Pro';
+  font-weight: 500;
+  color: #212121;
+}
+section #about p span {
+  color: rgba(255,0,0,0.5);
+}
+section #about p a {
+  text-decoration: none;
+}
+section #contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+section #contact h5 {
+  text-align: center;
+  margin: 0;
+  font-family: 'Abril Fatface';
+}
+section #contact form {
+  width: 75%;
+  padding: 0.5em 0;
+}
+section #contact form .input-group {
+  margin: 1em;
+}
+section #contact form .input-group label {
+  display: block;
+  font-size: 0.75em;
+  color: #000;
+  font: 300 0.75em 'Source Code Pro';
+}
+section #contact form .input-group textarea {
+  border: 2px solid #000;
+  color: rgba(255,0,0,0.5);
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0.5em 0;
+  padding: 0.5em 0.1em;
+  font: 300 0.75em 'Source Code Pro';
+}
+section #contact form .input-group input {
+  background: none;
+  border: solid 2px #000;
+  padding: 0.5em 0;
+  display: block;
+  width: 100%;
+  color: rgba(255,0,0,0.5);
+  font: 300 0.75em 'Source Code Pro';
+}
+section #contact form .input-group input:focus,
+section #contact form .input-group input:active {
+  outline: none;
+}
+section #contact form .input-group input[type='text'],
+section #contact form .input-group input[type='email'] {
+  border: none;
+  border-bottom: solid 2px #000;
+}
+section #contact form .input-group input[type='submit'] {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+          transition: all 0.5s ease-in-out 0s;
+  color: #000;
+}
+section #contact form .input-group input[type='submit']:active,
+section #contact form .input-group input[type='submit']:hover {
+  color: #fff;
+  background: #ff7f7f;
+  border: 2px solid #ff7f7f;
+}
+section #contact span {
+  color: #212121;
+  margin: 0 0 0 48%;
+  text-align: center;
+}
+section #contact span i {
+  -webkit-transition: 0.5s ease-in-out 0s;
+          transition: 0.5s ease-in-out 0s;
+}
+section #contact span i:hover {
+  color: #808080;
+}
+footer {
+  height: 3em;
+  background: #000;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer small {
+  color: #fff;
+  font: 300 0.5em normal;
+}
+section #header {
+  padding: 0 1em;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+section #header h2 {
+  font-family: 'Abril Fatface';
+  font-weight: 300;
+  margin: 0;
+}
+section #header p {
+  font: 900 0.75em 'Source Code Pro';
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+section #header .icons-container {
+  width: 300px;
+  text-align: center;
+  padding: 0.75em;
+}
+section #header .icons-container i {
+  color: #212121;
+  min-width: 25%;
+  -webkit-transition: 0.5s ease-in-out 0s;
+          transition: 0.5s ease-in-out 0s;
+}
+section #header .icons-container i:hover {
+  cursor: pointer;
+  color: rgba(255,0,0,0.5);
+}
+section #header span {
+  position: absolute;
+  bottom: 20px;
+  left: 42.5%;
+  text-transform: uppercase;
+  font: 900 0.4em 'Source Code Pro';
+  letter-spacing: 5px;
+  color: #212121;
+}
+section #knowledge {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+section #knowledge h4 {
+  margin: 0;
+  color: #212121;
+  font-family: 'Abril Fatface';
+}
+section #knowledge .icon-set {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+section #knowledge .icon-set i {
+  padding: 0.3em;
+  font-size: 3em;
+  color: #808080;
+  -webkit-transition: color 0.5s ease-in-out 0s;
+          transition: color 0.5s ease-in-out 0s;
+}
+section #knowledge .icon-set i:hover {
+  color: #ff7f7f;
+  cursor: crosshair;
+}
+nav {
+  position: fixed;
+  top: 0;
+  padding: 0.5em;
+  min-width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #000;
+}
+nav #logo a {
+  letter-spacing: -0.2em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0 0 1em;
+  -webkit-transition: 0.5s ease-in-out 0s;
+          transition: 0.5s ease-in-out 0s;
+}
+nav #logo a:hover {
+  color: #808080;
+}
+nav #navbar {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  padding: 0 2em 0 0;
+}
+nav #navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font: 300 0.75em normal;
+  -webkit-transition: 0.5s ease-in-out 0s;
+          transition: 0.5s ease-in-out 0s;
+}
+nav #navbar a:hover {
+  color: #808080;
+}
+section #skills h5 {
+  font-family: 'Abril Fatface';
+  margin: 0;
+}
+section #skills .skills-list p ul {
+  list-type: none;
+}
+section #work {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+section #work h4 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Abril Fatface';
+  color: #212121;
+}
+section #work .projects-container {
+  zoom: 1;
+}
+section #work .projects-container:before,
+section #work .projects-container:after {
+  content: "";
+  display: table;
+}
+section #work .projects-container:after {
+  clear: both;
+}
+section #work .projects-container a {
+  text-decoration: none;
+}
+section #work .projects-container .project {
+  display: block;
+  width: 33.333%;
+  height: 150px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  section #work .projects-container .project {
+    width: 50%;
+    height: 100px;
+  }
+}
+section #work .projects-container .project .icon {
+  text-align: center;
+  text-transform: uppercase;
+  color: #212121;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+section #work .projects-container .project .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(255,120,120,0.95);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+          transition: all 0.25s ease-in-out 0s;
+}
+section #work .projects-container .project .overlay p {
+  color: #fff;
+  margin: 0;
+  font: 300 1em 'Source Code Pro';
+}
+section #work .projects-container .project .overlay p:not(*:root) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+section #work .projects-container .project .overlay strong {
+  color: #fff;
+  text-transform: uppercase;
+  font: 300 1em normal;
+}
+section #work .projects-container .project .overlay i {
+  color: #fff;
+}
+section #work .projects-container .project .overlay small {
+  font: 300 0.75em normal;
+  color: #fff;
+  text-align: center;
+  width: 125px;
+  font: 200 0.5em 'Source Code Pro';
+}
+section #work .projects-container .project:hover .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

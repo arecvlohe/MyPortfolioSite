@@ -1,0 +1,18 @@
+mixin icon(href)
+  a(href=href target='_blank')
+    i.fa.fa-lg&attributes(attributes)
+  
+- var sites = {'fa-github': 'https://github.com/arecvlohe', 'fa-twitter':'https://twitter.com/adamrecvlohe', 'fa-linkedin':'https://www.linkedin.com/in/adamrecvlohe', 'fa-codepen' : 'http://codepen.io/arecvlohe/'};
+
+
+section
+  #header
+
+    h2 Adam Recvlohe
+    p Educator / Designer / Writer
+    
+    .icons-container
+      each url, icon in sites
+        +icon(url)(class=icon)
+  
+    span.animated.bounceInUp [Scroll Down]

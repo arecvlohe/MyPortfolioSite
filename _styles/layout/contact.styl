@@ -1,0 +1,73 @@
+section
+  #contact
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    height 100vh
+
+    h5
+      text-align center
+      margin 0
+      font-family 'Abril Fatface'
+
+    form
+      width 75%
+      padding .5em 0
+
+      .input-group
+        margin 1em
+
+        label
+          display block
+          font-size .75em
+          color black
+          font 300 .75em 'Source Code Pro'
+
+        textarea
+          border 2px solid black
+          color rgba(255,0,0,.5)
+          display block
+          width 100%
+          height 100px
+          margin .5em 0
+          padding .5em .1em
+          font 300 .75em 'Source Code Pro'
+
+
+        input
+          background none
+          border solid 2px black
+          padding .5em 0
+          display block
+          width 100%
+          color rgba(255,0,0,.5)
+          font 300 .75em 'Source Code Pro'
+
+
+          &:focus, &:active
+            outline none
+
+          &[type='text'], &[type='email']
+            border none
+            border-bottom solid 2px black
+
+          &[type='submit']
+            transition all .5s ease-in-out 0s
+            color black
+
+            &:active, &:hover
+              color white
+              background #ff7f7f
+              border 2px solid #ff7f7f
+
+    span
+      color lighten(black, 13%)
+      margin 0 0 0 48%
+      text-align center
+
+      i
+        transition .5s ease-in-out 0s
+
+        &:hover
+          color grey

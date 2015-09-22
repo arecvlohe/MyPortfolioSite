@@ -1,0 +1,46 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Adam Recvlohe <adam.recvlohe@gmail.com>"
+  ],
+  "homepage": "TBD",
+  "ignore": [
+    "**.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animateCSS": "~1.2.1",
+    "bounce.js": "~0.8.2",
+    "components-font-awesome": "~4.4.0",
+    "devicon": "*",
+    "Flowtype.js": "~1.1.0",
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "onepage-scroll": "onepage_scroll#~1.1.8"
+  },
+  "overrides": {
+    "onepage-scroll": {
+      "main": [
+        "dist/jquery.onepage-scroll.js",
+        "dist/onepage-scroll.css"
+      ]
+    },
+    "Flowtype.js": {
+      "main": [
+        "flowtype.js"
+      ]
+    },
+    "bounce.js": {
+      "main": [
+        "bounce.js"
+      ]
+    },
+    "devicon": {
+      "main": ["fonts/*", "devicon.css"]
+    }
+  }
+}

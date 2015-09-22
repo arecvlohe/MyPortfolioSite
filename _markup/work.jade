@@ -1,0 +1,18 @@
+mixin project(title, link, tools)
+  a(href=link target='_blank').project 
+    .icon
+      i.fa.fa-2x&attributes(attributes)
+    .overlay
+      p= title
+      
+section
+  #work  
+    h4 View my work 
+    .projects-container
+      +project('Pinterest Clone','http://aer-pinteresting.herokuapp.com/')(class='fa-pinterest')
+      +project("Random Quote App",'http://codepen.io/arecvlohe/full/yNqEaq')(class='fa-quote-right fa-quote left')
+      +project('Podcast App','http://aer-smokesignals.herokuapp.com/')(class='fa-microphone')
+      +project("Twitch.TV App",'http://codepen.io/arecvlohe/full/bdyGJp/')(class='fa-twitch')
+      +project('Weather App','http://codepen.io/arecvlohe/full/BNPvXQ')(class='fa-sun-o')
+      +project('HN Clone','https://github.com/arecvlohe/SmokeSignalsNewsMockUp')(class='fa-hacker-news')
+      
