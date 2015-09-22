@@ -36,9 +36,9 @@ var message = {
 
 gulp.task('inject', function() {
   var target = gulp.src('./_layouts/template.html');
-  var jquery = gulp.src(['assets/**/jquery.js'], {read: false}, {relative: false});
-  var vendors = gulp.src(['!assets/**/jquery.js', '!assets/**/script.js','!assets/**/Flowtype.js','!assets/lib/bounce.js','assets/**/*.js'], {read: false}, {relative:false});
-  var myStuff = gulp.src(['assets/js/script.js','!assets/lib/animate.css' ,'assets/**/*.css'], {read: false}, {relative: false});
+  var jquery = gulp.src(['assets/**/jquery.js'], {read: false}, {addRootSlash: false});
+  var vendors = gulp.src(['!assets/**/jquery.js', '!assets/**/script.js','!assets/**/Flowtype.js','!assets/lib/bounce.js','assets/**/*.js'], {read: false}, {addRootSlash:false});
+  var myStuff = gulp.src(['assets/js/script.js','!assets/lib/animate.css' ,'assets/**/*.css'], {read: false}, {addRootSlash: false});
 
   return target.pipe(inject(series(jquery, vendors, myStuff)))
     .pipe(gulp.dest('./_layouts'));
