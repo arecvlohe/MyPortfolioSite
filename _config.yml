@@ -1,10 +1,15 @@
 # Site settings
-title: Adam Recvlohe's Portfolio
+title: Adam Recvlohe - Educator, Designer, Writer
 email: adam.recvlohe@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is my portfolio. My web developments skills include prototyping,
+  responsive design, and brand development. My technical skills are with using
+  HTML5/CSS3, JavaScript, preprocessors such as Sass, Jade, Stylus, and
+  CoffeeScript, libraries such as jQuery, Bootstrap, and Semantic-UI,
+  build tools such as Gulp, NPM, Bower, and Yeoman, and frameworks such as
+  Ruby on Rails and Nodejs. I am just beginning to learn and I am
+  not afraid to fail.
+
 baseurl: "/MyPortfolioSite" # the subpath of your site, e.g. /blog/
 url: "https://arecvlohe.github.io" # the base hostname & protocol for your site
 twitter_username: adamrecvlohe

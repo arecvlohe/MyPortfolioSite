@@ -1,18 +1,18 @@
-mixin project(title, link, tools)
-  a(href=link target='_blank').project 
+mixin project(name, link, location)
+  a(href=link target='_blank' title='This link takes you to my ' + name + ' on ' + location).project 
     .icon
       i.fa.fa-2x&attributes(attributes)
     .overlay
-      p= title
+      p= name
       
-section
+section(title='My Work Section' description='A list of projects I have worked on')
   #work  
     h4 View my work 
     .projects-container
-      +project('Pinterest Clone','http://aer-pinteresting.herokuapp.com/')(class='fa-pinterest')
-      +project("Random Quote App",'http://codepen.io/arecvlohe/full/yNqEaq')(class='fa-quote-right fa-quote left')
-      +project('Podcast App','http://aer-smokesignals.herokuapp.com/')(class='fa-microphone')
-      +project("Twitch.TV App",'http://codepen.io/arecvlohe/full/bdyGJp/')(class='fa-twitch')
-      +project('Weather App','http://codepen.io/arecvlohe/full/BNPvXQ')(class='fa-sun-o')
-      +project('HN Clone','https://github.com/arecvlohe/SmokeSignalsNewsMockUp')(class='fa-hacker-news')
+      +project('Pinterest Clone','http://aer-pinteresting.herokuapp.com/','Heroku')(class='fa-pinterest')
+      +project("Random Quote App",'http://codepen.io/arecvlohe/full/yNqEaq', 'Codepen')(class='fa-quote-right fa-quote left')
+      +project('Podcast App','http://aer-smokesignals.herokuapp.com/', 'Heroku')(class='fa-microphone')
+      +project("Twitch.TV App",'http://codepen.io/arecvlohe/full/bdyGJp/','Codepen')(class='fa-twitch')
+      +project('Weather App','http://codepen.io/arecvlohe/full/BNPvXQ', 'Codepen')(class='fa-sun-o')
+      +project('HN Clone','https://github.com/arecvlohe/SmokeSignalsNewsMockUp','Github')(class='fa-hacker-news')
       

@@ -1,14 +1,15 @@
-mixin icon(href)
-  a(href=href target='_blank')
-    i.fa.fa-lg&attributes(attributes)
-  
 - var sites = {'fa-github': 'https://github.com/arecvlohe', 'fa-twitter':'https://twitter.com/adamrecvlohe', 'fa-linkedin':'https://www.linkedin.com/in/adamrecvlohe', 'fa-codepen' : 'http://codepen.io/arecvlohe/'};
 
+mixin icon(href)
+  a(href=href target='_blank' title='This link takes you to ' + href)
+    i.fa.fa-lg&attributes(attributes)
+  
 
-section
+
+section(title='My Name and Social Media Section' description='This is where you land on page load')
   #header
 
-    h2 Adam Recvlohe
+    h2(title='Adam Wreck Low') Adam Recvlohe
     p Educator / Designer / Writer
     
     .icons-container
