@@ -38,7 +38,7 @@ gulp.task('inject', function() {
   var target = gulp.src('./_layouts/template.html');
   var cwd = '/MyPortfolioSite';
   var jquery = gulp.src(['assets/**/jquery.js'], {read: false});
-  var vendors = gulp.src(['!assets/**/jquery.js', '!assets/**/script.js','!assets/**/Flowtype.js','assets/**/*.js'], {read: false});
+  var vendors = gulp.src(['!assets/**/jquery.js', '!assets/**/script.js','!assets/**/Flowtype.js','!assets/lib/onepage-scroll/dist/*.{css, js}','assets/**/*.js'], {read: false});
   var myStuff = gulp.src(['assets/js/script.js','!assets/lib/animate.css' , 'assets/**/*.css'], {read: false});
 
   return target.pipe(inject(series(jquery, vendors, myStuff), {addPrefix: cwd}))
