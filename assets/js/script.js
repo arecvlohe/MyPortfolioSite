@@ -19,7 +19,6 @@ $(document).ready(function(){
     loop              : true,
     keyboard          : true,
     responsiveFallback: false,
-    direction         : "vertical",
 
     responsiveHeightFallback: false,
     disableMouseMove        : false,
