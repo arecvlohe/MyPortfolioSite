@@ -14,17 +14,21 @@ section
 
     .icon-set
       display flex
-      justify-content space-between
+      justify-content center
       align-items center
       flex-wrap wrap
       width 70%
       margin 0 auto
 
       i
+        min-width 25%
         padding .45em
         font-size 3em
         color grey
         transition color .5s ease-in-out 0s
+
+        @media screen and (max-width: 420px)
+          min-width 50%
 
         &:hover
           color #ff7f7f

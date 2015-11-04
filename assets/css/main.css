@@ -275,10 +275,10 @@ section #knowledge .icon-set {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -290,11 +290,17 @@ section #knowledge .icon-set {
   margin: 0 auto;
 }
 section #knowledge .icon-set i {
+  min-width: 25%;
   padding: 0.45em;
   font-size: 3em;
   color: #808080;
   -webkit-transition: color 0.5s ease-in-out 0s;
           transition: color 0.5s ease-in-out 0s;
+}
+@media screen and (max-width: 420px) {
+  section #knowledge .icon-set i {
+    min-width: 50%;
+  }
 }
 section #knowledge .icon-set i:hover {
   color: #ff7f7f;
